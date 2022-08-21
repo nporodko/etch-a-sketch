@@ -1,0 +1,63 @@
+:root {
+  --grid-cols: 1;
+  --grid-rows: 1;
+}
+
+body {
+  background-color:rgb(119, 162, 160);
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+ 
+h1 {
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+#display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#button {
+  display:flex;
+  margin: 20px;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+button:hover {
+  background-color:rgb(15, 135, 135);
+}
+
+input {
+  border: none;
+  height: 30px;
+  border-radius: 5px;
+}
+
+button {
+  background-color:#2b6c68;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 5px;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: repeat(var(--grid-cols), 1fr);
+  grid-template-rows: repeat(var(--grid-rows), 1fr);
+  width: 640px;
+  height: 640px;
+  background-color: white;
+}
+
+.square {
+  border: 0.5px solid black;
+  background-color: white;
+}
+
+
